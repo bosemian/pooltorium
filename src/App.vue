@@ -10,10 +10,10 @@
         <!-- <span refs="timer" class="countdown" :class="{ 'text-danger': isWillTimeOut }">{{ timeFormat }}</span> -->
         <span class="time-digit" :class="{ 'text-danger': isWillTimeOut }">{{ digitTen }}</span>
         <span class="time-digit" :class="{ 'text-danger': isWillTimeOut }">{{ digitOne }}</span>
-        <span class="time-digit" :class="{ 'text-danger': isWillTimeOut }">.0</span>
-        <span class="time-digit" :class="{ 'text-danger': isWillTimeOut }">0</span>
+        <!-- <span class="time-digit" :class="{ 'text-danger': isWillTimeOut }">.0</span>
+        <span class="time-digit" :class="{ 'text-danger': isWillTimeOut }">0</span> -->
       </div>
-      <span class="sec">Sec.</span>
+      <!-- <span class="sec">Sec.</span> -->
     </section>
     <section class="control">
       <span @click="reset" refs="resetBtn" class="control-reset" :class="{ 'text-white': isRun }">reset</span>
