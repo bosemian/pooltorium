@@ -1,10 +1,11 @@
 <template>
   <main id="app">
-    <section class="logo-wrapper">
-      <div class="bg-logo">
-        <img class="img-logo" src="/imgs/LOGO_POOLTORIUM.png" alt="pooltorium">
+    <!-- <section class="logo-wrapper">
+      
+    </section> -->
+    <div class="bg-logo">
+        <img class="img-logo" src="/imgs/bg_countdown.png" alt="pooltorium">
       </div>
-    </section>
     <section class="time">
       <div class="time-wrapper">
         <!-- <span refs="timer" class="countdown" :class="{ 'text-danger': isWillTimeOut }">{{ timeFormat }}</span> -->
@@ -143,8 +144,8 @@ body {
 }
 
 main {
-  background: url("../public/imgs/bg.png") no-repeat;
-  background-size: cover;
+  /* background: url("../public/imgs/") no-repeat;
+  background-size: cover; */
   /* overflow: hidden; */
   height: 100%;
   margin-top: -30px;
@@ -159,8 +160,6 @@ main {
 
 .bg-logo {
   margin-top: 20px;
-  height: 200px;
-  width: 400px;
 }
 
 .img-logo {
@@ -169,12 +168,11 @@ main {
 }
 
 .time {
-  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 150px;
+  margin-top: 30px;
   /* padding-left: 70px;
   padding-right: 20px; */
 }
