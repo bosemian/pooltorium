@@ -147,6 +147,7 @@ main {
   background-size: cover;
   /* overflow: hidden; */
   height: 100%;
+  margin-top: -30px;
 }
 
 .logo-wrapper {
@@ -172,6 +173,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-top: 150px;
   /* padding-left: 70px;
   padding-right: 20px; */
 }
@@ -199,6 +201,7 @@ main {
 .control {
   display: flex;
   justify-content: space-around;
+  margin-top: -10px;
 }
 
 .control-reset {
