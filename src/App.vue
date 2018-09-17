@@ -119,11 +119,6 @@ export default {
       this.digitOne = 0
       clearInterval(interval)
     },
-
-    formatPrice(value) {
-      let val = (value/1).toFixed(2).replace('.', '.')
-      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-    }
   }
 }
 </script>
@@ -144,12 +139,14 @@ body {
   font-family: NexaBold;
   height: 100%;
   color: #fff;
+  background-color: #000;
 }
 
 main {
   background: url("../public/imgs/bg.png") no-repeat;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
+  height: 100%;
 }
 
 .logo-wrapper {
