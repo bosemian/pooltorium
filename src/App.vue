@@ -37,7 +37,8 @@ export default {
       isTimeout: false,
       isRun: false,
       digitTen: 3,
-      digitOne: 0
+      digitOne: 0,
+      sound: new Audio(require('../public/sound.mp3'))
     }
   },
 
@@ -47,13 +48,16 @@ export default {
         this.isRun = false
         this.isTimeout = true
         this.digitOne = 0
+        this.playSound()
       } else if (val < 10) {
         this.digitTen = 0
         this.digitOne = val
+        this.playSound()
       } else if (val < 11) {
         this.isWillTimeOut = true
         this.digitOne = this.digitTwo = val.toString().substr(1, 1)
         this.digitTen = 1
+        this.playSound()
       } else if (val < 20) {
         this.digitTen = 1
         this.digitOne = val.toString().substr(1, 1)
@@ -120,6 +124,10 @@ export default {
       this.digitOne = 0
       clearInterval(interval)
     },
+
+    playSound () {
+      this.sound.play()
+    }
   }
 }
 </script>
